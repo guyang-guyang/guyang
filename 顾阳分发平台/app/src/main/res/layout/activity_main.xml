@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_header">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:gravity="center" android:orientation="vertical">
+        <ImageView android:layout_width="72dp" android:layout_height="72dp"
+            android:layout_gravity="center_horizontal" android:src="@drawable/ic_logo"
+            android:scaleType="centerCrop" android:background="@drawable/btn_gradient" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:text="@string/app_name"
+            android:textColor="#FFFFFF" android:textSize="28sp" android:textStyle="bold"
+            android:letterSpacing="0.05" android:layout_marginTop="16dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:text="@string/app_slogan"
+            android:textColor="#B9E4C9" android:textSize="14sp" android:layout_marginTop="6dp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primaryContainer</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondaryContainer</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/onError</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+    <style name="Theme.MyApp.Splash" parent="Theme.MyApp">
+        <item name="android:windowBackground">@color/surface</item>
+    </style>
+    <style name="AppTheme" parent="Theme.MyApp" />
+    <style name="SplashTheme" parent="Theme.MyApp.Splash" />
+</resources>

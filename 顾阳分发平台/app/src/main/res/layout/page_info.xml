@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/surface" android:orientation="vertical">
+    <EditText android:id="@+id/search" android:layout_width="match_parent" android:layout_height="42dp"
+        android:hint="搜索资讯..." android:background="@drawable/input_bg"
+        android:paddingLeft="14dp" android:paddingRight="14dp" android:textSize="14sp"
+        android:layout_margin="10dp" android:inputType="text" android:maxLines="1" />
+    <ListView android:id="@+id/lv_info" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:divider="@null" android:dividerHeight="6dp" android:paddingLeft="10dp" android:paddingRight="10dp" />
+</LinearLayout>

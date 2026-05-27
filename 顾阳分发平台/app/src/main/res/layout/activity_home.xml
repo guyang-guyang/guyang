@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/surface" android:orientation="vertical">
+    <FrameLayout android:id="@+id/content_frame" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" />
+    <LinearLayout android:id="@+id/bottom_nav" android:layout_width="match_parent"
+        android:layout_height="52dp" android:background="@color/surfaceContainerLow"
+        android:orientation="horizontal" android:paddingTop="4dp" android:paddingBottom="4dp">
+        <LinearLayout android:id="@+id/tab_home" android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:gravity="center" android:orientation="vertical"
+            android:clickable="true" android:focusable="true">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp"
+                android:src="@drawable/ic_nav_home" android:scaleType="fitCenter" />
+            <TextView android:id="@+id/tv_bottom1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="首页" android:textSize="11sp" android:textColor="@color/primary" android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/tab_apps" android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:gravity="center" android:orientation="vertical"
+            android:clickable="true" android:focusable="true">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp"
+                android:src="@drawable/ic_nav_apps" android:scaleType="fitCenter" />
+            <TextView android:id="@+id/tv_bottom2" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="应用" android:textSize="11sp" android:textColor="@color/onSurface" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/tab_info" android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:gravity="center" android:orientation="vertical"
+            android:clickable="true" android:focusable="true">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp"
+                android:src="@drawable/ic_nav_info" android:scaleType="fitCenter" />
+            <TextView android:id="@+id/tv_bottom3" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="资讯" android:textSize="11sp" android:textColor="@color/onSurface" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/tab_me" android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:gravity="center" android:orientation="vertical"
+            android:clickable="true" android:focusable="true">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp"
+                android:src="@drawable/ic_nav_me" android:scaleType="fitCenter" />
+            <TextView android:id="@+id/tv_bottom4" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="我的" android:textSize="11sp" android:textColor="@color/onSurface" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical" android:padding="8dp">
+            <TextView android:id="@+id/tvWelcome" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="欢迎回来" android:textSize="22sp" android:textColor="@color/textPrimary"
+                android:textStyle="bold"/>
+            <TextView android:id="@+id/tvTime" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textSize="14sp"
+                android:textColor="@color/textSecondary"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="12dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="80dp"
+                android:layout_weight="1" android:layout_margin="4dp" android:gravity="center"
+                android:orientation="vertical" android:background="@drawable/input_bg">
+                <TextView android:id="@+id/tvTotalUsers" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="24sp"
+                    android:textColor="@color/primary" android:textStyle="bold" android:text="0"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="总用户" android:textSize="12sp" android:textColor="@color/textSecondary"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="80dp"
+                android:layout_weight="1" android:layout_margin="4dp" android:gravity="center"
+                android:orientation="vertical" android:background="@drawable/input_bg">
+                <TextView android:id="@+id/tvTodayNew" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="24sp"
+                    android:textColor="@color/primary" android:textStyle="bold" android:text="0"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="今日新增" android:textSize="12sp" android:textColor="@color/textSecondary"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="80dp"
+                android:layout_weight="1" android:layout_margin="4dp" android:gravity="center"
+                android:orientation="vertical" android:background="@drawable/input_bg">
+                <TextView android:id="@+id/tvOnlineApps" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="24sp"
+                    android:textColor="@color/primary" android:textStyle="bold" android:text="0"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="在线App" android:textSize="12sp" android:textColor="@color/textSecondary"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="80dp"
+                android:layout_weight="1" android:layout_margin="4dp" android:gravity="center"
+                android:orientation="vertical" android:background="@drawable/input_bg">
+                <TextView android:id="@+id/tvInfoCount" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="24sp"
+                    android:textColor="@color/primary" android:textStyle="bold" android:text="0"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="资讯数" android:textSize="12sp" android:textColor="@color/textSecondary"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="快捷操作" android:textSize="16sp" android:textColor="@color/textPrimary"
+            android:textStyle="bold" android:layout_marginTop="20dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btnAddApp" android:layout_width="0dp"
+                android:layout_height="48dp" android:layout_weight="1" android:layout_margin="4dp"
+                android:text="新增应用" android:textSize="14sp" android:textColor="@color/onPrimary"
+                android:background="@drawable/btn_bg"/>
+            <Button android:id="@+id/btnCards" android:layout_width="0dp"
+                android:layout_height="48dp" android:layout_weight="1" android:layout_margin="4dp"
+                android:text="卡密生成" android:textSize="14sp" android:textColor="@color/onPrimary"
+                android:background="@drawable/btn_bg"/>
+            <Button android:id="@+id/btnNews" android:layout_width="0dp"
+                android:layout_height="48dp" android:layout_weight="1" android:layout_margin="4dp"
+                android:text="发布资讯" android:textSize="14sp" android:textColor="@color/onPrimary"
+                android:background="@drawable/btn_bg"/>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="全部管理" android:textSize="16sp" android:textColor="@color/textPrimary"
+            android:textStyle="bold" android:layout_marginTop="16dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnApps" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1" android:layout_margin="3dp" android:text="应用" android:textSize="13sp" android:textColor="@color/onPrimary" android:background="@drawable/btn_bg"/>
+            <Button android:id="@+id/btnUsers" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1" android:layout_margin="3dp" android:text="用户" android:textSize="13sp" android:textColor="@color/onPrimary" android:background="@drawable/btn_bg"/>
+            <Button android:id="@+id/btnBanners" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1" android:layout_margin="3dp" android:text="Banner" android:textSize="13sp" android:textColor="@color/onPrimary" android:background="@drawable/btn_bg"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnInfo" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1" android:layout_margin="3dp" android:text="资讯" android:textSize="13sp" android:textColor="@color/onPrimary" android:background="@drawable/btn_bg"/>
+            <Button android:id="@+id/btnImages" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1" android:layout_margin="3dp" android:text="图片库" android:textSize="13sp" android:textColor="@color/onPrimary" android:background="@drawable/btn_bg"/>
+            <Button android:id="@+id/btnUpload" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1" android:layout_margin="3dp" android:text="上传" android:textSize="13sp" android:textColor="@color/onPrimary" android:background="@drawable/btn_bg"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnSettings" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1" android:layout_margin="3dp" android:text="远程更新" android:textSize="13sp" android:textColor="@color/onPrimary" android:background="@drawable/btn_bg"/>
+            <Button android:id="@+id/btnPassword" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1" android:layout_margin="3dp" android:text="改密码" android:textSize="13sp" android:textColor="@color/onPrimary" android:background="@drawable/btn_bg"/>
+            <Button android:id="@+id/btnAbout" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1" android:layout_margin="3dp" android:text="关于" android:textSize="13sp" android:textColor="@color/onPrimary" android:background="@drawable/btn_bg"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/recentList" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#416835</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="primaryContainer">#C2EFAE</color>
+    <color name="onPrimaryContainer">#022100</color>
+    <color name="secondary">#54634D</color>
+    <color name="onSecondary">#FFFFFF</color>
+    <color name="secondaryContainer">#D7E8CC</color>
+    <color name="onSecondaryContainer">#121F0E</color>
+    <color name="surfaceDim">#D8DBD1</color>
+    <color name="surface">#F8FAF0</color>
+    <color name="surfaceBright">#F8FAF0</color>
+    <color name="surfaceContainerLowest">#FFFFFF</color>
+    <color name="surfaceContainerLow">#F2F4EA</color>
+    <color name="surfaceContainer">#ECEFE5</color>
+    <color name="surfaceContainerHigh">#E7E9DF</color>
+    <color name="surfaceContainerHighest">#E1E3DA</color>
+    <color name="onSurface">#191D17</color>
+    <color name="onSurfaceVariant">#43483F</color>
+    <color name="outline">#73796E</color>
+    <color name="outlineVariant">#C3C8BC</color>
+    <color name="background">#F8FAF0</color>
+    <color name="onBackground">#191D17</color>
+    <color name="error">#BA1A1A</color>
+    <color name="onError">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bg">#F8FAF0</color>
+    <color name="cardBg">#FFFFFF</color>
+    <color name="divider">#C3C8BC</color>
+    <color name="textPrimary">#191D17</color>
+    <color name="textSecondary">#73796E</color>
+    <color name="text_dark">#191D17</color>
+    <color name="text_gray">#73796E</color>
+</resources>

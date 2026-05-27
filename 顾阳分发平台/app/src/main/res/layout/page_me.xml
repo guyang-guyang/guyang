@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/surface">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="14dp">
+
+        <!-- Avatar + User Info -->
+        <FrameLayout android:layout_width="match_parent" android:layout_height="100dp"
+            android:layout_marginBottom="14dp" android:background="@drawable/bg_gradient_header">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:gravity="center"
+                android:layout_gravity="center">
+                <ImageView android:id="@+id/iv_avatar" android:layout_width="52dp" android:layout_height="52dp"
+                    android:scaleType="centerCrop" android:src="@drawable/ic_default_avatar"
+                    android:layout_marginBottom="6dp" />
+                <TextView android:id="@+id/tv_nickname" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="未登录"
+                    android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold" />
+                <TextView android:id="@+id/tv_points" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="积分: 0"
+                    android:textColor="#CCFFFFFF" android:textSize="12sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Check-in -->
+        <Button android:id="@+id/btn_checkin" android:layout_width="match_parent" android:layout_height="44dp"
+            android:text="每日签到" android:textSize="14sp" android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rounded" android:layout_marginBottom="14dp" />
+
+        <!-- Points History -->
+        <LinearLayout android:id="@+id/menu_points_history" android:layout_width="match_parent" android:layout_height="48dp"
+            android:gravity="center_vertical" android:orientation="horizontal"
+            android:background="@drawable/bg_card_white" android:clickable="true" android:focusable="true"
+            android:layout_marginBottom="1dp" android:paddingLeft="16dp" android:paddingRight="16dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="积分记录" android:textSize="15sp" android:textColor="@color/onSurface" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text=">" android:textSize="18sp" android:textColor="#AAAAAA" />
+        </LinearLayout>
+
+        <!-- Downloads -->
+        <LinearLayout android:id="@+id/menu_downloads" android:layout_width="match_parent" android:layout_height="48dp"
+            android:gravity="center_vertical" android:orientation="horizontal"
+            android:background="@drawable/bg_card_white" android:clickable="true" android:focusable="true"
+            android:layout_marginBottom="1dp" android:paddingLeft="16dp" android:paddingRight="16dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="下载记录" android:textSize="15sp" android:textColor="@color/onSurface" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text=">" android:textSize="18sp" android:textColor="#AAAAAA" />
+        </LinearLayout>
+
+        <!-- Redeem -->
+        <LinearLayout android:id="@+id/menu_redeem" android:layout_width="match_parent" android:layout_height="48dp"
+            android:gravity="center_vertical" android:orientation="horizontal"
+            android:background="@drawable/bg_card_white" android:clickable="true" android:focusable="true"
+            android:layout_marginBottom="1dp" android:paddingLeft="16dp" android:paddingRight="16dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="卡密兑换" android:textSize="15sp" android:textColor="@color/onSurface" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text=">" android:textSize="18sp" android:textColor="#AAAAAA" />
+        </LinearLayout>
+
+        <!-- Customer Service -->
+        <LinearLayout android:id="@+id/menu_customer_service" android:layout_width="match_parent" android:layout_height="48dp"
+            android:gravity="center_vertical" android:orientation="horizontal"
+            android:background="@drawable/bg_card_white" android:clickable="true" android:focusable="true"
+            android:layout_marginBottom="20dp" android:paddingLeft="16dp" android:paddingRight="16dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="客服群" android:textSize="15sp" android:textColor="@color/onSurface" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text=">" android:textSize="18sp" android:textColor="#AAAAAA" />
+        </LinearLayout>
+
+        <!-- Logout -->
+        <Button android:id="@+id/btn_logout" android:layout_width="match_parent" android:layout_height="40dp"
+            android:text="退出登录" android:textSize="13sp" android:textColor="#999999"
+            android:background="@null" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="16dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="APK 上传" android:textSize="20sp" android:textColor="@color/textPrimary"
+        android:textStyle="bold"/>
+    <Button android:id="@+id/btnPickFile" android:layout_width="match_parent"
+        android:layout_height="56dp" android:text="选择 APK 文件" android:textSize="16sp"
+        android:textColor="@color/onPrimary" android:background="@drawable/btn_bg"
+        android:layout_marginTop="16dp"/>
+    <TextView android:id="@+id/tvFileName" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="未选择文件" android:textSize="13sp"
+        android:textColor="@color/textSecondary" android:padding="8dp"/>
+    <!-- 图标选择 -->
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="应用图标（可选）" android:textSize="14sp" android:textColor="@color/textPrimary"
+        android:layout_marginTop="12dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical">
+        <ImageView android:id="@+id/ivIcon" android:layout_width="64dp"
+            android:layout_height="64dp" android:background="@drawable/card_bg"
+            android:scaleType="centerCrop" android:layout_marginEnd="12dp"/>
+        <Button android:id="@+id/btnPickIcon" android:layout_width="wrap_content"
+            android:layout_height="48dp" android:text="选择图标图片"
+            android:textSize="14sp" android:textColor="@color/onPrimary"
+            android:background="@drawable/btn_bg"/>
+    </LinearLayout>
+    <EditText android:id="@+id/etName" android:hint="应用名称" android:inputType="text"
+        style="@style/FormInput"/>
+    <EditText android:id="@+id/etVersion" android:hint="版本号 (例: 1.0.0)" android:inputType="text"
+        style="@style/FormInput"/>
+    <EditText android:id="@+id/etCategory" android:hint="分类 (例: 工具)" android:inputType="text"
+        style="@style/FormInput"/>
+    <EditText android:id="@+id/etPrice" android:hint="价格 (积分, 0=免费)" android:inputType="number"
+        style="@style/FormInput"/>
+    <EditText android:id="@+id/etDesc" android:hint="应用描述" android:inputType="textMultiLine"
+        android:minLines="4" style="@style/FormInput"/>
+    <EditText android:id="@+id/etCloud" android:hint="购买/跳转地址 (用户点击购买时跳转的链接)" android:inputType="textUri"
+        style="@style/FormInput"/>
+    <ProgressBar android:id="@+id/progress" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"/>
+    <TextView android:id="@+id/tvProgress" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="12sp" android:textColor="@color/textSecondary"
+        android:gravity="center" android:visibility="gone"/>
+    <Button android:id="@+id/btnUpload" android:layout_width="match_parent"
+        android:layout_height="56dp" android:text="上传发布" android:textSize="18sp"
+        android:textColor="@color/onPrimary" android:background="@drawable/btn_bg"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
+</ScrollView>

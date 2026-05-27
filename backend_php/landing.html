@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>顾阳软件盒 - 海量应用免费下载</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:linear-gradient(135deg,#1B5E20 0%,#2E7D32 100%);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:20px}
+.logo{margin-top:40px;width:80px;height:80px;border-radius:20px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:40px;box-shadow:0 8px 32px rgba(0,0,0,.3)}
+.title{color:#fff;font-size:24px;font-weight:700;margin-top:16px;text-shadow:0 2px 8px rgba(0,0,0,.2)}
+.subtitle{color:rgba(255,255,255,.85);font-size:14px;margin-top:8px;text-align:center;line-height:1.6}
+.cards{margin-top:30px;width:100%;max-width:360px}
+.card{background:rgba(255,255,255,.95);border-radius:16px;padding:16px;margin-bottom:12px;display:flex;align-items:center;box-shadow:0 4px 16px rgba(0,0,0,.1)}
+.card-icon{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#43A047,#66BB6A);display:flex;align-items:center;justify-content:center;font-size:24px;margin-right:12px;flex-shrink:0}
+.card-info{flex:1}
+.card-name{font-size:15px;font-weight:600;color:#1A1A1A}
+.card-desc{font-size:12px;color:#888;margin-top:4px}
+.download-btn{width:100%;max-width:360px;margin-top:24px;background:linear-gradient(135deg,#FF6D00,#FF9100);color:#fff;border:none;border-radius:16px;padding:16px;font-size:18px;font-weight:700;cursor:pointer;box-shadow:0 8px 24px rgba(255,109,0,.4);text-align:center;text-decoration:none;display:block;transition:transform .2s}
+.download-btn:active{transform:scale(.97)}
+.invite-tip{color:rgba(255,255,255,.7);font-size:12px;margin-top:16px;text-align:center;line-height:1.8}
+.invite-code{display:inline-block;background:rgba(255,255,255,.2);color:#fff;padding:2px 10px;border-radius:6px;font-weight:700;letter-spacing:1px}
+.footer{color:rgba(255,255,255,.5);font-size:11px;margin-top:auto;padding-top:40px}
+</style>
+</head>
+<body>
+
+<div class="logo">📦</div>
+<div class="title">顾阳软件盒</div>
+<div class="subtitle">海量应用 免费下载<br>抖音·微信·拼多多 每日更新</div>
+
+<div class="cards">
+    <div class="card">
+        <div class="card-icon">🎵</div>
+        <div class="card-info">
+            <div class="card-name">抖音短视频</div>
+            <div class="card-desc">记录美好生活</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-icon">💬</div>
+        <div class="card-info">
+            <div class="card-name">微信</div>
+            <div class="card-desc">一款跨平台的通讯工具</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-icon">🛒</div>
+        <div class="card-info">
+            <div class="card-name">拼多多</div>
+            <div class="card-desc">多实惠，多乐趣</div>
+        </div>
+    </div>
+</div>
+
+<a class="download-btn" id="downloadBtn" href="#">📥 立即下载App</a>
+
+<div class="invite-tip" id="inviteTip">
+    注册时填写邀请码 <span class="invite-code" id="inviteCode">---</span><br>
+    你和邀请人各得 <strong style="color:#FFD600">30积分</strong>！
+</div>
+
+<div class="footer">顾阳软件盒 © 2026</div>
+
+<script>
+// 读取URL中的邀请码参数
+var params = new URLSearchParams(window.location.search);
+var inviteCode = params.get('invite') || params.get('invite_code') || '';
+
+if (inviteCode) {
+    document.getElementById('inviteCode').textContent = inviteCode.toUpperCase();
+    // 复制邀请码到剪贴板（方便在App注册时使用）
+    try {
+        var textarea = document.createElement('textarea');
+        textarea.value = inviteCode.toUpperCase();
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+    } catch(e) {}
+}
+
+// 下载按钮点击
+document.getElementById('downloadBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    // Android APK下载链接（后续替换为实际地址）
+    var apkUrl = 'http://47.108.209.71/upload/apk/guyang.apk';
+    
+    // 尝试直接下载
+    var link = document.createElement('a');
+    link.href = apkUrl;
+    link.download = '顾阳软件盒.apk';
+    link.style.display = 'none';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    // 备用：直接跳转下载
+    setTimeout(function() {
+        window.location.href = apkUrl;
+    }, 500);
+});
+
+// 如果URL中有invite参数，存储到localStorage
+if (inviteCode) {
+    try {
+        localStorage.setItem('guyang_invite_code', inviteCode.toUpperCase());
+    } catch(e) {}
+}
+</script>
+</body>
+</html>

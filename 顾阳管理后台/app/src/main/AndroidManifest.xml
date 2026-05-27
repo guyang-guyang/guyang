@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity android:name=".AppsActivity"
+            android:exported="false" />
+        <activity android:name=".ApkUploadActivity"
+            android:exported="false" />
+        <activity android:name=".UsersActivity"
+            android:exported="false" />
+        <activity android:name=".CardsActivity"
+            android:exported="false" />
+        <activity android:name=".InfoActivity"
+            android:exported="false" />
+        <activity android:name=".BannersActivity"
+            android:exported="false" />
+        <activity android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity android:name=".PasswordActivity"
+            android:exported="false" />
+        <activity android:name=".UploadActivity"
+            android:exported="false" />
+        <activity android:name=".ImagesActivity"
+            android:exported="false" />
+        <activity android:name=".AboutActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

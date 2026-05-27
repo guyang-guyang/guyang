@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="@color/surface">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center_horizontal" android:orientation="vertical"
+        android:paddingTop="48dp" android:paddingLeft="24dp" android:paddingRight="24dp" android:paddingBottom="32dp">
+        <TextView android:layout_width="64dp" android:layout_height="64dp" android:background="@drawable/btn_gradient"
+            android:gravity="center" android:text="G" android:textColor="#FFFFFF" android:textSize="30sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name"
+            android:textColor="@color/onSurface" android:textSize="26sp" android:textStyle="bold" android:layout_marginTop="16dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_register"
+            android:textColor="@color/onSurfaceVariant" android:textSize="15sp" android:layout_marginTop="4dp" android:layout_marginBottom="36dp" />
+        <EditText android:id="@+id/username" android:layout_width="match_parent" android:layout_height="50dp"
+            android:hint="用户名（2-20位）" android:background="@drawable/input_bg" android:paddingLeft="14dp"
+            android:paddingRight="14dp" android:textSize="15sp" android:textColor="@color/onSurface"
+            android:inputType="text" android:maxLines="1" android:layout_marginBottom="14dp" />
+        <EditText android:id="@+id/password" android:layout_width="match_parent" android:layout_height="50dp"
+            android:hint="密码（至少6位）" android:background="@drawable/input_bg" android:paddingLeft="14dp"
+            android:paddingRight="14dp" android:textSize="15sp" android:textColor="@color/onSurface"
+            android:inputType="textPassword" android:maxLines="1" android:layout_marginBottom="14dp" />
+        <EditText android:id="@+id/qq" android:layout_width="match_parent" android:layout_height="50dp"
+            android:hint="QQ号（5-11位）" android:background="@drawable/input_bg" android:paddingLeft="14dp"
+            android:paddingRight="14dp" android:textSize="15sp" android:textColor="@color/onSurface"
+            android:inputType="number" android:maxLines="1" android:layout_marginBottom="14dp" />
+        <EditText android:id="@+id/invite_code" android:layout_width="match_parent" android:layout_height="50dp"
+            android:hint="@string/invite_code" android:background="@drawable/input_bg" android:paddingLeft="14dp"
+            android:paddingRight="14dp" android:textSize="15sp" android:textColor="@color/onSurface"
+            android:inputType="text" android:maxLines="1" android:layout_marginBottom="6dp" />
+        <TextView android:id="@+id/error" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/error_red" android:textSize="12sp" android:paddingLeft="4dp" android:layout_marginBottom="14dp" />
+        <Button android:id="@+id/btn_register" android:layout_width="match_parent" android:layout_height="50dp"
+            android:text="@string/btn_register" android:textSize="16sp" android:textStyle="bold" android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rounded" />
+        <TextView android:id="@+id/btn_login" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:text="@string/has_account" android:textColor="@color/outline"
+            android:textSize="14sp" android:padding="12dp" android:layout_marginTop="18dp" />
+    </LinearLayout>
+</ScrollView>

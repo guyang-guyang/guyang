@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/surface" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="48dp"
+        android:background="@color/primary" android:gravity="center_vertical" android:paddingLeft="12dp">
+        <Button android:id="@+id/btn_back2" android:layout_width="wrap_content" android:layout_height="36dp"
+            android:text="‹ 返回" android:textColor="#FFFFFF" android:textSize="15sp" android:background="#00000000"
+            android:paddingLeft="8dp" android:paddingRight="12dp" android:minWidth="0dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="资讯详情" android:textColor="#FFFFFF" android:textSize="17sp" android:textStyle="bold" />
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="18dp">
+            <ImageView android:id="@+id/info_cover" android:layout_width="match_parent"
+                android:layout_height="180dp" android:scaleType="centerCrop"
+                android:background="@drawable/bg_icon_placeholder" />
+            <TextView android:id="@+id/info_title" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="资讯标题" android:textColor="@color/onSurface"
+                android:textSize="18sp" android:textStyle="bold" android:layout_marginTop="14dp" />
+            <TextView android:id="@+id/info_meta" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="0积分 1万次浏览 2025-05-21"
+                android:textColor="@color/text_gray" android:textSize="11sp" android:layout_marginTop="6dp" />
+            <TextView android:id="@+id/info_content" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="资讯详细内容..." android:textColor="@color/text_gray"
+                android:textSize="14sp" android:lineSpacingExtra="6dp" android:layout_marginTop="14dp" />
+            <Button android:id="@+id/btn_get" android:layout_width="match_parent" android:layout_height="44dp"
+                android:text="获取内容 (0积分)" android:textSize="14sp" android:textColor="#FFFFFF"
+                android:background="@drawable/btn_rounded" android:layout_marginTop="18dp" />
+            <Button android:id="@+id/btn_copy_pan" android:layout_width="match_parent" android:layout_height="40dp"
+                android:text="复制网盘链接" android:textSize="13sp" android:textColor="@color/primary"
+                android:background="@null" android:visibility="gone" android:layout_marginTop="6dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

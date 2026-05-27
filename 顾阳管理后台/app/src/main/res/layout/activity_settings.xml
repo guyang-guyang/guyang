@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="16dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="App名称" android:textColor="@color/textPrimary" android:textSize="14sp"
+        android:layout_marginTop="8dp"/>
+    <EditText android:id="@+id/et_app_name" android:layout_width="match_parent"
+        android:layout_height="48dp" android:background="@drawable/input_bg"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:textColor="@color/textPrimary" android:singleLine="true"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="公告" android:textColor="@color/textPrimary" android:textSize="14sp"/>
+    <EditText android:id="@+id/et_notice" android:layout_width="match_parent"
+        android:layout_height="48dp" android:background="@drawable/input_bg"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:textColor="@color/textPrimary" android:singleLine="true"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="充值链接" android:textColor="@color/textPrimary" android:textSize="14sp"/>
+    <EditText android:id="@+id/et_recharge_url" android:layout_width="match_parent"
+        android:layout_height="48dp" android:background="@drawable/input_bg"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:textColor="@color/textPrimary" android:singleLine="true"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="版本号（如 1.0.0）" android:textColor="@color/textPrimary" android:textSize="14sp"/>
+    <EditText android:id="@+id/et_version" android:layout_width="match_parent"
+        android:layout_height="48dp" android:background="@drawable/input_bg"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:textColor="@color/textPrimary" android:singleLine="true"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="版本Code（整数）" android:textColor="@color/textPrimary" android:textSize="14sp"/>
+    <EditText android:id="@+id/et_version_code" android:layout_width="match_parent"
+        android:layout_height="48dp" android:background="@drawable/input_bg"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:textColor="@color/textPrimary" android:singleLine="true"
+        android:inputType="number" android:layout_marginBottom="12dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="APK下载地址" android:textColor="@color/textPrimary" android:textSize="14sp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginBottom="12dp">
+        <EditText android:id="@+id/et_apk_url" android:layout_width="0dp"
+            android:layout_height="48dp" android:layout_weight="1"
+            android:background="@drawable/input_bg" android:paddingStart="12dp"
+            android:paddingEnd="12dp" android:textColor="@color/textPrimary"
+            android:singleLine="true"/>
+        <Button android:id="@+id/btn_pick_apk" android:layout_width="wrap_content"
+            android:layout_height="48dp" android:text="选择APK" android:textColor="@color/onPrimary"
+            android:background="@drawable/btn_bg" android:layout_marginStart="8dp"
+            android:minWidth="0dp" android:paddingStart="12dp" android:paddingEnd="12dp"/>
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="APK大小（字节）" android:textColor="@color/textPrimary" android:textSize="14sp"/>
+    <EditText android:id="@+id/et_apk_size" android:layout_width="match_parent"
+        android:layout_height="48dp" android:background="@drawable/input_bg"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:textColor="@color/textPrimary" android:singleLine="true"
+        android:inputType="number" android:layout_marginBottom="12dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="更新日志" android:textColor="@color/textPrimary" android:textSize="14sp"/>
+    <EditText android:id="@+id/et_update_log" android:layout_width="match_parent"
+        android:layout_height="96dp" android:background="@drawable/input_bg"
+        android:paddingStart="12dp" android:paddingEnd="12dp" android:paddingTop="12dp"
+        android:textColor="@color/textPrimary" android:gravity="top|start"
+        android:layout_marginBottom="16dp"/>
+
+    <CheckBox android:id="@+id/cb_force" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="强制更新"
+        android:textColor="@color/textPrimary" android:textSize="14sp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button android:id="@+id/btn_save" android:layout_width="match_parent"
+        android:layout_height="48dp" android:text="保存设置" android:textColor="@color/onPrimary"
+        android:background="@drawable/btn_bg" android:textSize="16sp"/>
+
+</LinearLayout>
+</ScrollView>

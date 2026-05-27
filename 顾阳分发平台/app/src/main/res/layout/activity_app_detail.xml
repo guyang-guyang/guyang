@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/surface" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="48dp"
+        android:background="@color/primary" android:gravity="center_vertical" android:paddingLeft="12dp">
+        <Button android:id="@+id/btn_back1" android:layout_width="36dp" android:layout_height="36dp"
+            android:text="←" android:textColor="#FFFFFF" android:textSize="18sp" android:background="@null" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="应用详情" android:textColor="#FFFFFF" android:textSize="17sp" android:textStyle="bold" />
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="18dp" android:gravity="center_horizontal">
+            <ImageView android:id="@+id/app_icon2" android:layout_width="64dp" android:layout_height="64dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_icon_placeholder" />
+            <TextView android:id="@+id/app_name2" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="应用名称" android:textColor="@color/onSurface"
+                android:textSize="19sp" android:textStyle="bold" android:layout_marginTop="12dp" />
+            <TextView android:id="@+id/app_info2" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="版本 1.0 25MB 1万次下载"
+                android:textColor="@color/text_gray" android:textSize="12sp" android:layout_marginTop="4dp" />
+            <Button android:id="@+id/btn_download" android:layout_width="match_parent" android:layout_height="48dp"
+                android:text="下载 (0 积分)" android:textSize="15sp" android:textStyle="bold" android:textColor="#FFFFFF"
+                android:background="@drawable/btn_rounded" android:layout_marginTop="14dp" />
+            <Button android:id="@+id/btn_browser" android:layout_width="match_parent" android:layout_height="40dp"
+                android:text="网盘下载" android:textSize="13sp" android:textColor="@color/primary"
+                android:background="@null" android:visibility="gone" android:layout_marginTop="6dp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="应用简介" android:textColor="@color/onSurface" android:textSize="15sp"
+                android:textStyle="bold" android:layout_marginTop="20dp" android:layout_gravity="start" />
+            <TextView android:id="@+id/app_desc2" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="应用描述..." android:textColor="@color/text_gray"
+                android:textSize="14sp" android:lineSpacingExtra="4dp" android:layout_marginTop="6dp" android:layout_gravity="start" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
